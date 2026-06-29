@@ -1,0 +1,44 @@
+schema_version = "1.3"
+artifacts = [ "/app/output.json",]
+
+[task]
+name = "terminal-bench/claim-reconciliation-auditor"
+description = ""
+authors = []
+keywords = []
+
+[metadata]
+author_name = "Harshitha Vemula"
+author_email = "harshitha.vemula@example.com"
+author_organization = ""
+difficulty_explanation = "This task requires applying multiple interacting claim-reconciliation rules across CSV and JSONL data, including temporal coverage, authorization windows, duplicate precedence, and manual correction overrides."
+solution_explanation = "The solution parses claims and event logs, checks coverage and authorization, applies duplicate precedence, applies manual correction only to expected status, and writes deterministic JSON with a checksum."
+verification_explanation = "The verifier checks schema, exact classifications, summary counts, evidence fields, sorted records, and checksum correctness."
+category = "data_engineering"
+tags = [ "python", "data-quality", "healthcare", "reconciliation",]
+expert_time_estimate_hours = 3
+relevant_experience = "Python backend and ETL validation work involving structured data, schema checks, and healthcare-style data processing."
+
+[verifier]
+timeout_sec = 180.0
+environment_mode = "separate"
+collect = []
+
+[verifier.env]
+
+[agent]
+timeout_sec = 3600.0
+
+[environment]
+network_mode = "public"
+build_timeout_sec = 600.0
+os = "linux"
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]

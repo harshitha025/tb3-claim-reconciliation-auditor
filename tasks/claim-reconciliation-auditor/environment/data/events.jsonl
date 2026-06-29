@@ -1,0 +1,13 @@
+{"type":"coverage_start","member_id":"M001","date":"2026-01-01"}
+{"type":"auth","member_id":"M001","cpt_prefix":"971","start":"2026-01-01","end":"2026-01-31","auth_id":"A1"}
+{"type":"coverage_start","member_id":"M002","date":"2026-01-01"}
+{"type":"coverage_end","member_id":"M002","date":"2026-02-15"}
+{"type":"coverage_start","member_id":"M003","date":"2026-01-01"}
+{"type":"auth","member_id":"M003","cpt_prefix":"971","start":"2026-02-01","end":"2026-02-28","auth_id":"A3"}
+{"type":"coverage_start","member_id":"M004","date":"2026-01-01"}
+{"type":"coverage_end","member_id":"M004","date":"2026-03-31"}
+{"type":"coverage_reinstate","member_id":"M004","date":"2026-04-01"}
+{"type":"coverage_start","member_id":"M005","date":"2026-01-01"}
+{"type":"auth","member_id":"M005","cpt_prefix":"971","start":"2026-02-01","end":"2026-02-28","auth_id":"A5"}
+{"type":"manual_correction","claim_id":"CLM010","expected_status":"PAYABLE","reason":"retro auth entered outside source feed"}
+{"type":"coverage_start","member_id":"M006","date":"2026-03-01"}
